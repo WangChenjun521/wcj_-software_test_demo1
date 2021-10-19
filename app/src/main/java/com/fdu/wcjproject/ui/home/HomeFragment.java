@@ -13,7 +13,9 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import android.util.Log;
 
+import com.fdu.wcjproject.MainActivity;
 import com.fdu.wcjproject.R;
 
 public class HomeFragment extends Fragment {
@@ -38,7 +40,10 @@ public class HomeFragment extends Fragment {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btn.setText("wangchenjun");
+                btn.setText("这是汪陈军的按钮");
+                System.out.println("THIS is a button from wangchenjun");
+                Log.d("MainActivity","hi! I am wangchenjun");
+                Toast.makeText(getActivity(),"您点了一下汪陈军的按钮！", Toast.LENGTH_SHORT).show();
             }
         });
         return root;
