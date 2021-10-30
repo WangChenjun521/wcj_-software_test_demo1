@@ -12,7 +12,7 @@ public class TextViewHolder extends RecyclerView.ViewHolder implements View.OnCl
     public TextViewHolder(@NonNull View itemView){
         super(itemView);
         mTextView=itemView.findViewById(R.id.text);
-        mTextView.setHeight(50);
+     //   mTextView.setHeight(50);
         itemView.setOnClickListener(this);
     }
     public void bind(String text){
